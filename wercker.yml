@@ -1,0 +1,15 @@
+box: wercker/python
+# Build definition
+build:
+  # The steps that will be executed on build
+  steps:
+    - script:
+        name: step
+        code: |
+          ./step.sh
+    # A custom script step, name value is used in the UI
+    # and the code value contains the command that get executed
+    - script:
+        name: test
+        code: |
+          pip install mock

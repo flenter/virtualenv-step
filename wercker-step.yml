@@ -1,0 +1,3 @@
+name: py-virtualenv
+version: 0.0.1
+description: virtualenv creation & activation step
